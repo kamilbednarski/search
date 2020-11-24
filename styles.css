@@ -1,0 +1,67 @@
+
+body {
+    width: auto;
+    overflow: hidden;
+}
+
+main {
+    width: auto;
+    height: 90vh;
+    margin: auto;
+    transition-duration: 500ms;
+}
+
+.nav-bar-item {
+    width: 6rem;
+}
+
+.search-input {
+    max-width: 580px;
+    margin: auto;
+    border-radius: 1.5rem;
+    height: 2.7rem;
+    padding-left: 5rem;
+}
+
+.search-input:hover {
+    border: none;
+    box-shadow:  -3px -3px 10px #00000030,  3px 3px 10px #00000030;
+}
+
+.logo {
+    font-size: 3.8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition-duration: 500ms;
+}
+
+.blue {
+    color: #4285F4;
+}
+
+.red {
+    color: #DB4437;
+}
+
+.yellow {
+    color: #F4B400;
+}
+
+.green {
+    color: #0F9D58;
+}
+
+.search-icon {
+    width: 24px;
+    height: 24px;
+}
+
+@media (min-height: 550px) {
+    main {
+        padding-top: 14vh;
+    }
+
+    .logo {
+        transform: scale(1.3);
+    }
+}
