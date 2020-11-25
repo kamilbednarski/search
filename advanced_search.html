@@ -37,282 +37,114 @@
 
         <!-- Beginning of form section-->
         <div class="pt-2">
-
-            <div class="container-fluid">
-                <!-- Zero row -->
-                <div class="row justify-content-left align-items-center pb-3">
-                    <div class="adv-column-left">
-                        Find pages with:
-                    </div>
-                    <div class="col-6 adv-column-center">
-                        
-                    </div>
-                    <div class="adv-column-right col">
-                        To do this in the search box.
-                    </div>
-                </div>
-
-                <!-- First row -->
-                <div class="row justify-content-left align-items-center pb-3">
-                    <div class="adv-column-left">
-                        <small>all these words:</small>
-                    </div>
-                    <div class="col-6 adv-column-center">
-                        <input class="form-control form-control-sm border" type="text">
-                    </div>
-                    <div class="adv-column-right col">
-                        <small>Type the important words:  tri-colour rat terrier</small>
-                    </div>
-                </div>
-
-                <!-- Second row -->
-                <div class="row justify-content-left align-items-center pb-3">
-                    <div class="adv-column-left">
-                        <small>this exact word or phrase:</small>
-                    </div>
-                    <div class="col-6 adv-column-center">
-                        <input class="form-control form-control-sm border" type="text">
-                    </div>
-                    <div class="adv-column-right col">
-                        <small>Put exact words in quotes:  "rat terrier"</small>
-                    </div>
-                </div>
-
-                <!-- Third row -->
-                <div class="row justify-content-left align-items-center pb-3">
-                    <div class="adv-column-left">
-                        <small>any of these words:</small>
-                    </div>
-                    <div class="col-6 adv-column-center">
-                        <input class="form-control form-control-sm border" type="text">
-                    </div>
-                    <div class="adv-column-right col">
-                        <small>Type OR between all the words you want:  miniature OR standard</small>
-                    </div>
-                </div>
-
-                <!-- Fourth row -->
-                <div class="row justify-content-left align-items-center pb-3">
-                    <div class="adv-column-left">
-                        <small>none of these words:</small>
-                    </div>
-                    <div class="col-6 adv-column-center">
-                        <input class="form-control form-control-sm border" type="text">
-                    </div>
-                    <div class="adv-column-right col">
-                        <small>Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</small>
-                    </div>
-                </div>
-
-                <!-- Fifth row -->
-                <div class="row justify-content-left align-items-center pb-3">
-                    <div class="adv-column-left">
-                        <small>numbers ranging from:</small>
-                    </div>
-                    <div class="col-6 adv-column-center">
-                        <div class="row">
-                            <span class="col">
-                                <input class="form-control form-control-sm border" type="text">
-                            </span>
-                            <span class="text-center col-1 pt-1"><small>to</small></span>
-                            <span class="col">
-                                <input class="form-control form-control-sm border" type="text">
-                            </span>
+            <form id="advancedsearchform" action="https://google.com/search">
+                <div class="container-fluid">
+                    <!-- Zero row -->
+                    <div class="row justify-content-left align-items-center pb-3">
+                        <div class="adv-column-left">
+                            Find pages with:
+                        </div>
+                        <div class="col-6 adv-column-center">
+                            
+                        </div>
+                        <div class="adv-column-right col">
+                            To do this in the search box.
                         </div>
                     </div>
-                    <div class="adv-column-right col">
-                        <small>Put two full stops between the numbers and add a unit of measurement: 10..35 kg, £300..£500, 2010..2011</small>
-                    </div>
-                </div>
 
-                <!-- End of first section -->
-                <div class="row justify-content-left align-items-center py-3">
-                    <div class="border-bottom adv-column-left"></div>
-                    <div class="border-bottom col-6 adv-column-center"></div>
-                    <div class="border-bottom adv-column-right col"></div>
-                </div>
+                    <!-- First row -->
+                    <div class="row justify-content-left align-items-center pb-3">
+                        <div class="adv-column-left">
+                            <small>all these words:</small>
+                        </div>
+                        <div class="col-6 adv-column-center">
+                            <input name="as_q" class="form-control form-control-sm border" type="text">
+                        </div>
+                        <div class="adv-column-right col">
+                            <small>Type the important words:  tri-colour rat terrier</small>
+                        </div>
+                    </div>
 
-                <!-- Beginning of second section -->
-                <!-- Zero row -->
-                <div class="row justify-content-left align-items-center pb-3">
-                    <div class="adv-column-left">
-                        Then narrow your results by...
+                    <!-- Second row -->
+                    <div class="row justify-content-left align-items-center pb-3">
+                        <div class="adv-column-left">
+                            <small>this exact word or phrase:</small>
+                        </div>
+                        <div class="col-6 adv-column-center">
+                            <input name="as_epq" class="form-control form-control-sm border" type="text">
+                        </div>
+                        <div class="adv-column-right col">
+                            <small>Put exact words in quotes:  "rat terrier"</small>
+                        </div>
                     </div>
-                    <div class="col-6 adv-column-center"></div>
-                    <div class="adv-column-right col"></div>
-                </div>
 
-                <!-- First row -->
-                <div class="row justify-content-left align-items-center pb-3">
-                    <div class="adv-column-left">
-                        <small>language:</small>
+                    <!-- Third row -->
+                    <div class="row justify-content-left align-items-center pb-3">
+                        <div class="adv-column-left">
+                            <small>any of these words:</small>
+                        </div>
+                        <div class="col-6 adv-column-center">
+                            <input name="as_oq" class="form-control form-control-sm border" type="text">
+                        </div>
+                        <div class="adv-column-right col">
+                            <small>Type OR between all the words you want:  miniature OR standard</small>
+                        </div>
                     </div>
-                    <div class="col-6 adv-column-center">
-                        <select class="custom-select custom-select-sm" id="exampleFormControlSelect1">
-                            <option>any language</option>
-                            <option>Afrikaans</option>
-                            <option>Arabic</option>
-                            <option>Armenian</option>
-                            <option>Belarusian</option>
-                            <option>Bulgarian</option>
-                            <option>Catalan</option>
-                            <option>Chinese (Simpliefied)</option>
-                          </select>
-                    </div>
-                    <div class="adv-column-right col">
-                        <small>Find pages in the language that you select.</small>
-                    </div>
-                </div>
 
-                <!-- Second row -->
-                <div class="row justify-content-left align-items-center pb-3">
-                    <div class="adv-column-left">
-                        <small>region:</small>
+                    <!-- Fourth row -->
+                    <div class="row justify-content-left align-items-center pb-3">
+                        <div class="adv-column-left">
+                            <small>none of these words:</small>
+                        </div>
+                        <div class="col-6 adv-column-center">
+                            <input name="as_eq" class="form-control form-control-sm border" type="text">
+                        </div>
+                        <div class="adv-column-right col">
+                            <small>Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</small>
+                        </div>
                     </div>
-                    <div class="col-6 adv-column-center">
-                        <select class="custom-select custom-select-sm" id="exampleFormControlSelect1">
-                            <option>any region</option>
-                            <option>Afghanistan</option>
-                            <option>Albania</option>
-                            <option>Algieria</option>
-                            <option>American Samoa</option>
-                            <option>Andorra</option>
-                            <option>Angola</option>
-                          </select>
-                    </div>
-                    <div class="adv-column-right col">
-                        <small>Find pages published in a particular region.</small>
-                    </div>
-                </div>
 
-                <!-- Third row -->
-                <div class="row justify-content-left align-items-center pb-3">
-                    <div class="adv-column-left">
-                        <small>last update:</small>
+                    <!-- Fifth row -->
+                    <div class="row justify-content-left align-items-center pb-3">
+                        <div class="adv-column-left">
+                            <small>numbers ranging from:</small>
+                        </div>
+                        <div class="col-6 adv-column-center">
+                            <div class="row">
+                                <span class="col">
+                                    <input name="as_nlo" class="form-control form-control-sm border" type="text">
+                                </span>
+                                <span class="text-center col-1 pt-1"><small>to</small></span>
+                                <span class="col">
+                                    <input class="form-control form-control-sm border" type="text">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="adv-column-right col">
+                            <small>Put two full stops between the numbers and add a unit of measurement: 10..35 kg, £300..£500, 2010..2011</small>
+                        </div>
                     </div>
-                    <div class="col-6 adv-column-center">
-                        <select class="custom-select custom-select-sm" id="exampleFormControlSelect1">
-                            <option>anytime</option>
-                            <option>past 24 hours</option>
-                            <option>past week</option>
-                            <option>past month</option>
-                            <option>past year</option>
-                          </select>
-                    </div>
-                    <div class="adv-column-right col">
-                        <small>Find pages updated within the time that you specify.</small>
-                    </div>
-                </div>
 
-                <!-- Fourth row -->
-                <div class="row justify-content-left align-items-center pb-3">
-                    <div class="adv-column-left">
-                        <small>site or domain:</small>
-                    </div>
-                    <div class="col-6 adv-column-center">
-                        <input class="form-control form-control-sm border" type="text">
-                    </div>
-                    <div class="adv-column-right col">
-                        <small>Search one site (like  wikipedia.org ) or limit your results to a domain like .edu, .org or .gov</small>
-                    </div>
-                </div>
+                    
 
-                <!-- Fifth row -->
-                <div class="row justify-content-left align-items-center pb-3">
-                    <div class="adv-column-left">
-                        <small>terms appearing:</small>
+                    <!-- Submit button -->
+                    <div class="row justify-content-left align-items-center py-2">
+                        <div class="adv-column-left"></div>
+                        <div class="col-6 adv-column-center text-right">
+                            <input type="submit" class="btn btn-primary btn-sm" value="Advanced Search">
+                        </div>
+                        <div class="adv-column-right col"></div>
                     </div>
-                    <div class="col-6 adv-column-center">
-                        <select class="custom-select custom-select-sm" id="exampleFormControlSelect1">
-                            <option>anywhere in the page</option>
-                            <option>in the title of the page</option>
-                            <option>in the text of the page</option>
-                            <option>in the URL of the page</option>
-                            <option>in links to the page</option>
-                          </select>
-                    </div>
-                    <div class="adv-column-right col">
-                        <small>Search for terms in the whole page, page title or web address, or links to the page you're looking for.</small>
-                    </div>
-                </div>
 
-                <!-- Sixth row -->
-                <div class="row justify-content-left align-items-center pb-3">
-                    <div class="adv-column-left">
-                        <small class="blue">SafeSearch:</small>
+                    <!-- End of second section -->
+                    <div class="row justify-content-left align-items-center py-3">
+                        <div class="border-bottom adv-column-left"></div>
+                        <div class="border-bottom col-6 adv-column-center"></div>
+                        <div class="border-bottom adv-column-right col"></div>
                     </div>
-                    <div class="col-6 adv-column-center">
-                        <select class="custom-select custom-select-sm" id="exampleFormControlSelect1">
-                            <option>Show explicit results</option>
-                            <option>Hide explicit results</option>
-                          </select>
-                    </div>
-                    <div class="adv-column-right col">
-                        <small>Tell SafeSearch whether to filter sexually explicit content.</small>
-                    </div>
-                </div>
 
-                <!-- Seventh row -->
-                <div class="row justify-content-left align-items-center pb-3">
-                    <div class="adv-column-left">
-                        <small>file type:</small>
-                    </div>
-                    <div class="col-6 adv-column-center">
-                        <select class="custom-select custom-select-sm" id="exampleFormControlSelect1">
-                            <option>any format</option>
-                            <option>Adobe Acrobat PDF (.pdf)</option>
-                            <option>Adobe Postscript (.ps)</option>
-                            <option>Autodesk DWF (.dwf)</option>
-                            <option>Google Earth KML (.kml)</option>
-                            <option>Google Earth KMZ (.kmz)</option>
-                            <option>Microsoft Excel (.xls)</option>
-                            <option>Microsoft Powerpoint (.ppt)</option>
-                            <option>Microsoft Word (.doc)</option>
-                            <option>Rich Text Format (.rtf)</option>
-                            <option>Shockwave Flash (.swf)</option>
-                          </select>
-                    </div>
-                    <div class="adv-column-right col">
-                        <small>Find pages in the format that you prefer.</small>
-                    </div>
                 </div>
-
-                <!-- Eigth row -->
-                <div class="row justify-content-left align-items-center pb-3">
-                    <div class="adv-column-left">
-                        <small class="blue">usage rights:</small>
-                    </div>
-                    <div class="col-6 adv-column-center">
-                        <select class="custom-select custom-select-sm" id="exampleFormControlSelect1">
-                            <option>not filtered by license</option>
-                            <option>free to use or share</option>
-                            <option>free to use or share, even commercially</option>
-                            <option>free to use share or modify</option>
-                            <option>free to use, share or modify, even commercially</option>
-                          </select>
-                    </div>
-                    <div class="adv-column-right col">
-                        <small>Find pages that you are free to use yourself.</small>
-                    </div>
-                </div>
-
-                <!-- Submit button -->
-                <div class="row justify-content-left align-items-center py-2">
-                    <div class="adv-column-left"></div>
-                    <div class="col-6 adv-column-center text-right">
-                        <input type="submit" class="btn btn-primary btn-sm" value="Advanced Search">
-                    </div>
-                    <div class="adv-column-right col"></div>
-                </div>
-
-                <!-- End of second section -->
-                <div class="row justify-content-left align-items-center py-3">
-                    <div class="border-bottom adv-column-left"></div>
-                    <div class="border-bottom col-6 adv-column-center"></div>
-                    <div class="border-bottom adv-column-right col"></div>
-                </div>
-
-            </div>
+            </form>
             
         </div>
     </body>
