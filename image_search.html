@@ -15,6 +15,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com"> 
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
+        <!-- Font awesome -->
+        <script src="https://kit.fontawesome.com/45fc05582a.js" crossorigin="anonymous"></script>
+
         <title>Search</title>
 
     </head>
@@ -23,10 +26,10 @@
         <div class="container-fluid pt-3">
             <div class="row justify-content-end">
                 <div class="nav-bar-item text-right">
-                    <a class="nav-link small text-dark" href="/image_search.html">Images</a>
+                    <a class="nav-link small text-dark" href="index.html">Search</a>
                 </div>
                 <div class="nav-bar-item text-right">
-                    <a class="nav-link small text-dark" href="/advanced_search.html">Advanced</a>
+                    <a class="nav-link small text-dark" href="advanced_search.html">Advanced</a>
                 </div>
             </div>     
         </div>
@@ -34,9 +37,11 @@
             <!-- Logo -->
             <div class="container-fluid">
                 <div class="row justify-content-center align-items-center">
+                
                     <div class="col text-center logo">
-                        <span class="blue">N</span><span class="red">o</span><span class="yellow">o</span><span class="red">d</span><span class="green">l</span><span class="red">e</span>
+                        <span class="pl-5"><span class="blue">N</span><span class="red">o</span><span class="yellow">o</span><span class="red">d</span><span class="green">l</span><span class="red">e</span><span class="blue small_text">Images</span></span>
                     </div>
+                    
                 </div>
             </div>
 
@@ -47,19 +52,21 @@
                     <!-- Row with search input -->
                     <div class="row justify-content-center align-items-center">
                         <div class="col-11 py-4">
-                            <input type="hidden" name="tbm" value="isch">
-                            <input class="form-control search-input" type="text" name="q" autocapitalize="off" autofocus spellcheck="false" maxlength="2048">
+                            <div class="search-input justify-content-center align-items-center border">
+                                <i class="fas fa-search text-secondary pl-3 pr-2"></i>
+                                <input type="hidden" name="tbm" value="isch">
+                                <input class="custom-input" type="text" name="q" autocapitalize="off" autofocus spellcheck="false" maxlength="2048">
+                            </div>
                         </div>
                     </div>
+
                     <!-- Row with submit buttons -->
                     <div class="row justify-content-center align-items-center">
-                        <div class="col text-right">
+                        <div class="col text-center">
                             <button type="submit" class="btn btn-light">Noodle Search</button>
                         </div>
-                        <div class="col text-left">
-                            <button type="submit" class="btn btn-light">I'm Feeling Lucky</button>
-                        </div>
                     </div>
+
                 </div>
             </form>
         </main>
