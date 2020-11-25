@@ -1,7 +1,7 @@
 
 body {
     width: auto;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 main {
@@ -72,6 +72,39 @@ main {
 .small_text {
     font-size: 0.8rem !important;
 }
+
+.adv-column-left {
+    padding-left: 2rem;
+    width: 12rem;
+}
+
+.adv-column-center {
+    max-width: 750px !important;
+}
+
+.adv-column-right {
+    
+    max-width: 25rem;
+    line-height: 1;
+    color: grey;
+}
+
+.sub-column-operator {
+    display: inline;
+}
+
+.sub-column {
+    display: inline;
+    width: auto;
+}
+
+@media (max-width: 1150px) {
+    .adv-column-right {
+        display: none;
+    }
+}
+
+
 
 @media (min-height: 550px) {
     main {
