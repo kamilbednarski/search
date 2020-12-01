@@ -1,4 +1,4 @@
-# Search - recreating Google's fronten
+# Search - recreating Google's frontend
 
 #### Please visit my [video description](https://youtu.be/yyB4d6VLNc0) of that project on YouTube.
 #### Visit [my YouTube channel](https://youtube.com/user/bdkamil95) for other projects.
